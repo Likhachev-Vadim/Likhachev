@@ -45,9 +45,22 @@ namespace LikhachevStore
 
         private string GetImagesPath()
         {
-            string path = @"C:\Users\dobva\source\repos\LikhachevStore\LikhachevStore\images";
-            if (Directory.Exists(path)) return path;
-            return "images";
+            // СНАЧАЛА ИЩЕТ ПАПКУ РЯДОМ С EXE
+            string exePath = AppDomain.CurrentDomain.BaseDirectory;
+            string imagesPath = Path.Combine(exePath, "images");
+
+            if (Directory.Exists(imagesPath))
+                return imagesPath;
+
+            // ЕСЛИ НЕТ - ИЩЕТ В ПАПКЕ ПРОЕКТА (ДЛЯ ОТЛАДКИ)
+            string projectPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\images"));
+
+            if (Directory.Exists(projectPath))
+                return projectPath;
+
+            // ЕСЛИ ВСЕ ЕЩЕ НЕТ - СОЗДАЁТ ПАПКУ РЯДОМ С EXE
+            Directory.CreateDirectory(imagesPath);
+            return imagesPath;
         }
 
         private void LoadTestData()
@@ -116,7 +129,6 @@ namespace LikhachevStore
             }
         }
 
-        
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
             if (currentUserRole != "Администратор")
@@ -128,7 +140,6 @@ namespace LikhachevStore
             var product = (sender as Button)?.Tag as Product;
             if (product == null) return;
 
-            
             var dialog = new Window
             {
                 Title = "Редактирование товара",
@@ -144,6 +155,14 @@ namespace LikhachevStore
             var txtName = new TextBox { Text = product.Name, FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 0, 0, 10) };
             stack.Children.Add(txtName);
 
+            stack.Children.Add(new TextBlock { Text = "Категория:", FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 5, 0, 5) });
+            var cmbCat = new ComboBox { ItemsSource = new[] { "Кроссовки", "Ботинки", "Туфли", "Сандалии", "Сапоги" }, SelectedItem = product.Category, FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 0, 0, 10) };
+            stack.Children.Add(cmbCat);
+
+            stack.Children.Add(new TextBlock { Text = "Производитель:", FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 5, 0, 5) });
+            var cmbMan = new ComboBox { ItemsSource = new[] { "Nike", "Adidas", "Reebok", "Puma", "ECCO", "Timberland" }, SelectedItem = product.Manufacturer, FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 0, 0, 10) };
+            stack.Children.Add(cmbMan);
+
             stack.Children.Add(new TextBlock { Text = "Цена:", FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 5, 0, 5) });
             var txtPrice = new TextBox { Text = product.Price.ToString(), FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 0, 0, 10) };
             stack.Children.Add(txtPrice);
@@ -155,6 +174,10 @@ namespace LikhachevStore
             stack.Children.Add(new TextBlock { Text = "Количество:", FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 5, 0, 5) });
             var txtQuantity = new TextBox { Text = product.StockQuantity.ToString(), FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 0, 0, 10) };
             stack.Children.Add(txtQuantity);
+
+            stack.Children.Add(new TextBlock { Text = "Ед. изм.:", FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 5, 0, 5) });
+            var cmbUnit = new ComboBox { ItemsSource = new[] { "Штука", "Пара", "Комплект" }, SelectedItem = product.Unit, FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 0, 0, 10) };
+            stack.Children.Add(cmbUnit);
 
             var btnSave = new Button { Content = "Сохранить", Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#00FA9A")), Padding = new Thickness(10), Margin = new Thickness(0, 10, 0, 5), FontFamily = new FontFamily("Times New Roman"), FontWeight = FontWeights.Bold };
             var btnCancel = new Button { Content = "Отмена", Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#7FFF00")), Padding = new Thickness(10), Margin = new Thickness(0, 5, 0, 0), FontFamily = new FontFamily("Times New Roman"), FontWeight = FontWeights.Bold };
@@ -173,9 +196,12 @@ namespace LikhachevStore
                     int.TryParse(txtQuantity.Text, out int qty) && qty >= 0)
                 {
                     product.Name = txtName.Text;
+                    product.Category = cmbCat.SelectedItem?.ToString() ?? "";
+                    product.Manufacturer = cmbMan.SelectedItem?.ToString() ?? "";
                     product.Price = price;
                     product.Discount = discount;
                     product.StockQuantity = qty;
+                    product.Unit = cmbUnit.SelectedItem?.ToString() ?? "Пара";
                     FilterProducts();
                     dialog.Close();
                 }
@@ -190,7 +216,6 @@ namespace LikhachevStore
             dialog.ShowDialog();
         }
 
-       
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             if (currentUserRole != "Администратор")
@@ -218,12 +243,11 @@ namespace LikhachevStore
                 return;
             }
 
-            // ОКНО ДЛЯ ДОБАВЛЕНИЯ
             var dialog = new Window
             {
                 Title = "Добавление товара",
                 Width = 400,
-                Height = 450,
+                Height = 500,
                 WindowStartupLocation = WindowStartupLocation.CenterOwner,
                 Background = Brushes.White
             };
@@ -257,6 +281,10 @@ namespace LikhachevStore
             stack.Children.Add(new TextBlock { Text = "Ед. изм.:", FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 5, 0, 5) });
             var cmbUnit = new ComboBox { ItemsSource = new[] { "Штука", "Пара", "Комплект" }, SelectedIndex = 1, FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 0, 0, 10) };
             stack.Children.Add(cmbUnit);
+
+            stack.Children.Add(new TextBlock { Text = "Путь к фото:", FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 5, 0, 5) });
+            var txtImage = new TextBox { Text = "1.jpg", FontFamily = new FontFamily("Times New Roman"), Margin = new Thickness(0, 0, 0, 10) };
+            stack.Children.Add(txtImage);
 
             var btnSave = new Button { Content = "Сохранить", Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#00FA9A")), Padding = new Thickness(10), Margin = new Thickness(0, 10, 0, 5), FontFamily = new FontFamily("Times New Roman"), FontWeight = FontWeights.Bold };
             var btnCancel = new Button { Content = "Отмена", Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#7FFF00")), Padding = new Thickness(10), Margin = new Thickness(0, 5, 0, 0), FontFamily = new FontFamily("Times New Roman"), FontWeight = FontWeights.Bold };
@@ -292,6 +320,8 @@ namespace LikhachevStore
                 }
 
                 int newId = allProducts.Count > 0 ? allProducts.Max(x => x.Id) + 1 : 1;
+                string imgPath = Path.Combine(GetImagesPath(), txtImage.Text);
+
                 allProducts.Add(new Product
                 {
                     Id = newId,
@@ -302,7 +332,7 @@ namespace LikhachevStore
                     Discount = discount,
                     StockQuantity = qty,
                     Unit = cmbUnit.SelectedItem?.ToString() ?? "Пара",
-                    ImagePath = Path.Combine(GetImagesPath(), "1.jpg")
+                    ImagePath = imgPath
                 });
 
                 LoadCategories();

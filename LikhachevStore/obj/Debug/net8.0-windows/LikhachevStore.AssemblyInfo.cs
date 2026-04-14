@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LikhachevStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb67077f52a0d5b7c5ee07361d64f93e7d8979b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb5d3fc33f1d96765a8db123866fc9a77f108335")]
 [assembly: System.Reflection.AssemblyProductAttribute("LikhachevStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LikhachevStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
