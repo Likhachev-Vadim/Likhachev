@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\dobva\\source\\repos\\LikhachevStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\likhachevstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\likhachevstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\likhachevstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AC37B6DA-105B-43C3-83AF-14250F45791B}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\likhachevstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|c:\\users\\dobva\\source\\repos\\likhachevstore\\likhachevstore\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2929CBBA-2DE8-1CF5-ACD2-70EC53A94E5F}|LikhachevStore\\LikhachevStore.csproj|solutionrelative:likhachevstore\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,16 +42,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LikhachevStore",
+              "DocumentIndex": 2,
+              "Title": "LikhachevStore.csproj",
               "DocumentMoniker": "C:\\Users\\dobva\\source\\repos\\LikhachevStore\\LikhachevStore\\LikhachevStore.csproj",
               "RelativeDocumentMoniker": "LikhachevStore\\LikhachevStore.csproj",
               "ToolTip": "C:\\Users\\dobva\\source\\repos\\LikhachevStore\\LikhachevStore\\LikhachevStore.csproj",
               "RelativeToolTip": "LikhachevStore\\LikhachevStore.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-14T11:00:03.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:00:03.587Z"
             },
             {
               "$type": "Document",
@@ -67,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\dobva\\source\\repos\\LikhachevStore\\LikhachevStore\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "LikhachevStore\\AssemblyInfo.cs",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "LikhachevStore\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T09:46:02.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T09:46:02.232Z"
             },
             {
               "$type": "Document",
@@ -98,7 +96,7 @@
               "RelativeDocumentMoniker": "LikhachevStore\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\dobva\\source\\repos\\LikhachevStore\\LikhachevStore\\MainWindow.xaml.cs",
               "RelativeToolTip": "LikhachevStore\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK0BAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T09:44:21.614Z",
               "EditorCaption": ""

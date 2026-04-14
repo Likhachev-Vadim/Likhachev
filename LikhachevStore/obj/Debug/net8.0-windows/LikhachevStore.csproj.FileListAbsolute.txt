@@ -23,3 +23,4 @@ C:\Users\dobva\source\repos\LikhachevStore\LikhachevStore\obj\Debug\net8.0-windo
 C:\Users\dobva\source\repos\LikhachevStore\LikhachevStore\obj\Debug\net8.0-windows\LikhachevStore.pdb
 C:\Users\dobva\source\repos\LikhachevStore\LikhachevStore\obj\Debug\net8.0-windows\LikhachevStore.genruntimeconfig.cache
 C:\Users\dobva\source\repos\LikhachevStore\LikhachevStore\obj\Debug\net8.0-windows\ref\LikhachevStore.dll
+C:\Users\dobva\source\repos\LikhachevStore\LikhachevStore\obj\Debug\net8.0-windows\LikhachevStore.sourcelink.json
